@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pangolins In Disguise - FTC Team</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        * {box-sizing: border-box;}
+        body {font-family: Verdana, sans-serif; margin: 0; background: #ffffff; color: #d8a17a;}
+        .slideshow-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+        }
+        .mySlides {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+        .mySlides img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            z-index: 10;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+        .text {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            right: 15px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white !important;
+            font-size: 16px;
+            padding: 12px 20px;
+            border-radius: 6px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #c59572;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+        @media only screen and (max-width: 300px) {
+            .prev, .next, .text {font-size: 11px}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav id="navigation">
+                <div class="logo">
+                    <div><img src="drawingv21-removebg-preview.png" alt="Logo" height="100"></div>
+                    <span style="font-size: 20px; margin-top: -44px;">Pangolins In Disguise</span>
+                </div>
+                <div class="ham">≡</div>
+                <ul id="hamNav">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#robot">Our Robot</a></li>
+                    <li><a href="#knowledge">Knowledge</a></li>
+                    <li><a href="#sponsors">Sponsor Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="jat.jpeg" alt="Image 1">
+                    <div class="text">Adhvik (front) and Annuncia (back) working on the team website</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="jat2.jpeg" alt="Image 2">
+                    <div class="text">The arm of the robot, being made by Advait (left) and Pranav (right)</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="jat3.jpeg" alt="Image 3">
+                    <div class="text">Ekanthika (front) looking at grants for the team with Mathangi (back)</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <div class="dot-container" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </section>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Building the Future, One Robot at a Time.</h1>
+                <p>Welcome to the home of #30624 Pangolins In Disguise, a student-led 
+                    <a href="https://www.firstinspires.org/">FIRST</a>
+                     Tech Challenge team dedicated to innovation, teamwork, and STEM education.</p>
+                <a href="#sponsors" class="btn">Support Our Mission</a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Our Team</h2>
+            <p>Our team, Pangolins In Disguise, was founded in 2025 with a mission to inspire young people to be scientific and technological leaders. We participate in the FIRST Tech Challenge (FTC), where we design, build, and program a robot to compete in a head-to-head challenge. More than just robots, we are focused on developing valuable life skills like problem-solving, collaboration, and community outreach.</p>
+            <div class="card">
+                <img src="unnamed.png" alt="Pangolins In Disguise Team Photo" class="section-image">
+                <h4>Group Photo</h4>
+                <p>A photo of all of the collaborators in our group. We usually split into mini teams for separate sections of work to compete in FTC.</p>
+            </div>
+        </section>
+
+        <section id="robot" class="section">
+            <h2>Meet Our 2025 Robot: "Pangolin"</h2>
+            <p>Our progress is a testament to our learning journey. Here’s a look at the development of our latest competition robot.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="robot.chassis.jpg" alt="Robot chassis being built">
+                    <h4>Chassis & Drivetrain</h4>
+                    <p>Our custom mecanum drivetrain allows for agile omnidirectional movement on the field.</p>
+                </div>
+                <div class="card">
+                    <img src="IMG_2750-ezgif.com-crop.gif" alt="Robot running an autonomous program">
+                    <h4>Autonomous Programming</h4>
+                    <p>We developed advanced autonomous routines using computer vision to score points consistently.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="knowledge" class="section">
+            <h2>Knowledge Sharing</h2>
+            <p>We believe in Gracious Professionalism® and sharing what we learn. Here are some resources we've created for the FTC community.</p>
+            <div class="knowledge-list">
+                <a href="#" class="knowledge-item">Our Guide to Effective PID Tuning</a>
+                <a href="#" class="knowledge-item">Building a Resilient Drivetrain for FTC</a>
+                <a href="#" class="knowledge-item">Java Programming Basics for FTC Control Hub</a>
+                <a href="#" class="knowledge-item">Our Team's Engineering Portfolio Template</a>
+            </div>
+        </section>
+
+        <section id="sponsors" class="section sponsor-section">
+            <h2>Become a Sponsor</h2>
+            <p>Your support is crucial to our success. Donations and grants help us buy parts, pay for competition registration fees, and fund our community outreach events. By sponsoring us, you are investing in the next generation of STEM leaders.</p>
+            <div style="width: 100%; height: 0; padding-bottom: 56.25%; position: relative;">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSen5Jp54c4Qj0GBpt3Swn7wjKLAX_jUMdk0q-WkeoEAq_0jMA/viewform?embedded=true" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Pangolins In Disguise. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="mailto:pangolinsindisguise@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/pango-pa/" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://discord.com/channels/1383603202913603775/1383603202913603778" aria-label="Discord"><i class="fab fa-discord"></i></a>
+            <a href="https://www.reddit.com/user/Ok-Push4507/" aria-label="Reddit"><i class="fab fa-reddit"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+
+        setInterval(function () {
+            plusSlides(1);
+        }, 5000);
+    </script>
+</body>
+</html>
