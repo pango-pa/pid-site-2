@@ -11,7 +11,9 @@
     --font-heading: 'Poppins', sans-serif;
     --font-body: 'Roboto', sans-serif;
 }
-
+li {
+    text-align: center;
+  }
 * {
     margin: 0;
     padding: 0;
