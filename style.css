@@ -16,12 +16,10 @@ li {
   }
 
   ul { /* Or ol */
-    display: flex;
-    justify-content: center; /* Centers items horizontally */
-    /* Optional: For vertical centering if needed */
-    align-items: center;
+    width: 80%; /* Or any desired width */
+    margin: 0 auto;
   }
-  
+
 * {
     margin: 0;
     padding: 0;
