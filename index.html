@@ -97,6 +97,28 @@
         @media only screen and (max-width: 300px) {
             .prev, .next, .text {font-size: 11px}
         }
+        .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
     </style>
 </head>
 <body>
@@ -189,10 +211,18 @@
             <h2>Knowledge Sharing</h2>
             <p>We believe in Gracious Professionalism® and sharing what we learn. Here are some resources we've created for the FTC community.</p>
             <div class="knowledge-list">
-                <a href="#" class="knowledge-item">Our Guide to Effective PID Tuning</a>
-                <a href="#" class="knowledge-item">Building a Resilient Drivetrain for FTC</a>
-                <a href="#" class="knowledge-item">Java Programming Basics for FTC Control Hub</a>
-                <a href="#" class="knowledge-item">Our Team's Engineering Portfolio Template</a>
+                <button type="button" class="collapsible">CAD and designing custom parts</button>
+<div class="content">
+  <p>Make a plan or sketch before designing your model. Make sure to learn all the different features in your CAD software before you design.</p>
+</div>
+<button type="button" class="collapsible">Autonomous Java code</button>
+<div class="content">
+  <p>Check the official FTC docs <a href="https://ftc-docs.firstinspires.org/en/latest/programming_resources/onbot_java/OnBot-Java-Tutorial.html">here</a>.</p>
+</div>
+<button type="button" class="collapsible">Robot Design</button>
+<div class="content">
+  <p>Coming soon!</p>
+</div>
             </div>
         </section>
 
