@@ -31,7 +31,6 @@ ul > li {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 html {
     scroll-behavior: smooth;
 }
@@ -405,4 +404,9 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.sponsors{
+    color: #000;
+    list-style-type: none;
 }
