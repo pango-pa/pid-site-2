@@ -3,308 +3,410 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pangolins In Disguise - FTC Team</title>
-    <link rel="stylesheet" href="style.css">
+    <title>NexaVerse - Digital Excellence</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <style>
-        * {box-sizing: border-box;}
-        body {font-family: Verdana, sans-serif; margin: 0; background: #ffffff; color: #d8a17a;}
-        .slideshow-container {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            margin: auto;
-            overflow: hidden;
-        }
-        .mySlides {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            display: none;
-        }
-        .mySlides img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            z-index: 10;
-        }
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-        .prev:hover, .next:hover {
-            background-color: rgba(0,0,0,0.8);
-        }
-        .text {
-            position: absolute;
-            bottom: 15px;
-            left: 15px;
-            right: 15px;
-            background-color: rgba(0, 0, 0, 0.6);
-            color: white !important;
-            font-size: 16px;
-            padding: 12px 20px;
-            border-radius: 6px;
-            text-align: center;
-            box-sizing: border-box;
-        }
-        .numbertext {
-            color: #f2f2f2;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            top: 0;
-        }
-        .dot {
-            cursor: pointer;
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #c59572;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-        .active, .dot:hover {
-            background-color: #717171;
-        }
-        .fade {
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-        @keyframes fade {
-            from {opacity: .4} 
-            to {opacity: 1}
-        }
-        @media only screen and (max-width: 300px) {
-            .prev, .next, .text {font-size: 11px}
-        }
-        .collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="templatemo-nexaverse.css">
+<!-- 
 
-.active, .collapsible:hover {
-  background-color: #555;
-}
+TemplateMo 603 Nexaverse
 
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
-    </style>
+https://templatemo.com/tm-603-nexaverse
+
+-->
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav id="navigation">
-                <div class="logo">
-                    <div><img src="drawingv21-removebg-preview.png" alt="Logo" height="100"></div>
-                    <span style="font-size: 20px; margin-top: -44px;">Pangolins In Disguise</span>
-                </div>
-                <div class="ham">≡</div>
-                <ul id="hamNav">
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#robot">Our Robot</a></li>
-                    <li><a href="#knowledge">Knowledge</a></li>
-                    <li><a href="#sponsors">Sponsor Us</a></li>
-                </ul>
-            </nav>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-ring"></div>
+        <div class="loading-text">Initializing Experience...</div>
+    </div>
+
+    <!-- Ambient Background -->
+    <div class="ambient-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Grid Overlay -->
+    <div class="grid-overlay"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <div class="header" id="mainHeader">
+            <div class="logo">
+                <img src="drawingv21-removebg-preview.png" alt="PID Logo">
+            </div>
+            <h1 class="brand-name">PANGOLINS IN DISGUISE</h1>
+            <p class="tagline">Our Only Limit: Battery Life!</p>
         </div>
-    </header>
-    <main>
-        <section class="section">
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 4</div>
-                    <img src="jat.jpeg" alt="Image 1">
-                    <div class="text">Adhvik (front) and Annuncia (back) working on the team website</div>
-                </div>
+        
 
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 4</div>
-                    <img src="jat2.jpeg" alt="Image 2">
-                    <div class="text">The arm of the robot, being made by Advait (left) and Pranav (right)</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 4</div>
-                    <img src="jat3.jpeg" alt="Image 3">
-                    <div class="text">Ekanthika (front) looking at grants for the team with Mathangi (back)</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">4 / 4</div>
-                    <img src="unnamed.png" alt="Image 4">
-                    <div class="text">The team at one of our first classes</div>
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
+        <!-- Menu Grid -->
+        <div class="menu-grid" id="menuGrid">
+            <div class="menu-item initial-load" data-section="introduction">
+                <div class="menu-badge">MT</div>
+                <div class="menu-title">Meet Our Team</div>
             </div>
-            <div class="dot-container" style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span> 
+            <div class="menu-item initial-load" data-section="services">
+                <div class="menu-badge">OR</div>
+                <div class="menu-title">Outreach</div>
             </div>
-        </section>
-
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Building the Future, One Robot at a Time.</h1>
-                <p>Welcome to the home of #30624 Pangolins In Disguise, a student-led 
-                    <a href="https://www.firstinspires.org/">FIRST</a>
-                     Tech Challenge team dedicated to innovation, teamwork, and STEM education.</p>
-                <a href="#sponsors" class="btn">Support Our Mission</a>
+            <div class="menu-item initial-load" data-section="gallery">
+                <div class="menu-badge">GL</div>
+                <div class="menu-title">Gallery</div>
             </div>
-        </section>
-
-        <section id="about" class="section">
-            <h2>About Our Team</h2>
-            <p>Our team, Pangolins In Disguise, was founded in 2025 with a mission to inspire young people to be scientific and technological leaders. We participate in the FIRST Tech Challenge (FTC), where we design, build, and program a robot to compete in a head-to-head challenge. More than just robots, we are focused on developing valuable life skills like problem-solving, collaboration, and community outreach.</p>
-            <div class="card">
-                <img src="image000000.jpg" alt="Pangolins In Disguise Team Photo" class="section-image">
-                <h4>Group Photo</h4>
-                <p>A photo of all of the collaborators in our group. We usually split into mini teams for separate sections of work to compete in FTC.</p>
+            <div class="menu-item initial-load" data-section="testimonials">
+                <div class="menu-badge">TP</div>
+                <div class="menu-title">Tips</div>
             </div>
-        </section>
-
-        <section id="robot" class="section">
-            <h2>Meet Our 2025 Robot: "Pangolin"</h2>
-            <p>Our progress is a testament to our learning journey. Here’s a look at the development of our latest competition robot.</p>
-            <div class="card-grid">
-                <div class="card">
-                    <img src="image000008.jpg" alt="Robot chassis and intake">
-                    <h4>Chassis & Drivetrain</h4>
-                    <p>Our custom mecanum drivetrain allows for agile omnidirectional movement on the field.</p>
-                </div>
-                <div class="card">
-                    <img src="ac6lpn.gif" alt="Robot running an autonomous program">
-                    <h4>Autonomous Programming</h4>
-                    <p>We developed advanced autonomous routines using computer vision to score points consistently.</p>
-                </div>
+            <div class="menu-item initial-load" data-section="about">
+                <div class="menu-badge">RD</div>
+                <div class="menu-title">Robot Design</div>
             </div>
-        </section>
-
-        <section id="knowledge" class="section">
-            <h2>Knowledge Sharing</h2>
-            <p>We believe in Gracious Professionalism® and sharing what we learn. Here are some resources we've created for the FTC community.</p>
-            <div class="knowledge-list">
-                <button type="button" class="collapsible">CAD and designing custom parts</button>
-<div class="content">
-  <p>Make a plan or sketch before designing your model. Make sure to learn all the different features in your CAD software before you design.</p>
-</div>
-<button type="button" class="collapsible">Autonomous Java code</button>
-<div class="content">
-  <p>Check the official FTC docs <a href="https://ftc-docs.firstinspires.org/en/latest/programming_resources/onbot_java/OnBot-Java-Tutorial.html">here</a>.</p>
-</div>
-<button type="button" class="collapsible">Robot Design</button>
-<div class="content">
-  <p>Coming soon!</p>
-</div>
+            <div class="menu-item initial-load" data-section="contact">
+                <div class="menu-badge">CT</div>
+                <div class="menu-title">Contact</div>
             </div>
-        </section>
-
-        <section id="sponsors" class="section sponsor-section">
-            <h2>Become a Sponsor</h2>
-            <p>Your support is crucial to our success. Donations and grants help us buy parts, pay for competition registration fees, and fund our community outreach events. By sponsoring us, you are investing in the next generation of STEM leaders.</p>
-            <p>Our existing sponsors are:</p>
-            <div class="sponsors">
-                <ul>
-                  <li>
-                    <b>Gene HAAS Foundation</b>
-                    <img src="GeneHaasFound-removebg-preview.png" alt="Gene HAAS logo" height="100">
-                  </li>
-                  <li>
-                    <b>FTC Hardship Grant</b>
-                    <img src="FIRST-removebg-preview.png" alt="FIRST logo" height="100">
-                  </li>
-                  <li>
-                    <b>Polymaker</b>
-                    <img src="polymaker-logo-removebg-preview.png" alt="FIRST logo" height="100">
-                  </li>
-                </ul>
-              </div>
-
-              <h3>For more info, email us at <strong>ftc@pangolins.team</strong></h3>
-              
-            <div style="width: 100%; height: 0; padding-bottom: 56.25%; position: relative;">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSen5Jp54c4Qj0GBpt3Swn7wjKLAX_jUMdk0q-WkeoEAq_0jMA/viewform?embedded=true" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0"></iframe>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2025 Pangolins In Disguise. All Rights Reserved.</p>
-        <div class="social-links">
-            <a href="mailto:pangolinsindisguise@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-            <a href="https://github.com/pango-pa/" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://discord.com/channels/1383603202913603775/1383603202913603778" aria-label="Discord"><i class="fab fa-discord"></i></a>
-            <a href="https://www.reddit.com/user/Ok-Push4507/" aria-label="Reddit"><i class="fab fa-reddit"></i></a>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
+        <!-- Content Sections -->
+        <div id="contentArea">
+            <!-- MEET THE TEAM Section -->
+            <div class="content-section" id="introduction">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="smallLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00f0ff"/>
+                                    <stop offset="100%" style="stop-color:#ff00d4"/>
+                                </linearGradient>
+                            </defs>
+                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad)" stroke-width="3"/>
+                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad)"/>
+                        </svg>
+                    </div>
+                    <div class="small-brand">
+                        <h3>PID</h3>
+                        <p>Our only limit... Battery life!</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+                
+                <!-- Hero Banner -->
+                <div class="intro-hero">
+                    <div class="intro-hero-content">
+                        <span class="intro-badge">Est. 2025</span>
+                        <h1 class="intro-headline">Meet<br><span>Our</span> Team</h1>
+                        <p class="intro-subtext">We are Pangolins in Disguise, a creative FTC robotics team driven by innovation, engineering excellence, and community impact. Our diverse members combine skills in programming, design, outreach, and media to learn, solve real-world problems, and inspire others in STEM.</p>
+                        <div class="intro-cta-group">
+                            <button class="intro-cta-primary">Explore Our Work</button>
+                        </div>
+                    </div>
+                    <div class="intro-hero-visual">
+                        <div class="intro-floating-card card-1">
+                            <span class="card-icon">🧠</span>
+                            <span class="card-text">Smart</span>
+                        </div>
+                        <div class="intro-floating-card card-2">
+                            <span class="card-icon">✍️</span>
+                            <span class="card-text">Diligent</span>
+                        </div>
+                        <div class="intro-floating-card card-3">
+                            <span class="card-icon">💪</span>
+                            <span class="card-text">Hardworking</span>
+                        </div>
+                        <div class="intro-orb"></div>
+                    </div>
+                </div>
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
+                <!-- Metrics Strip -->
+                <div class="intro-metrics">
+                    <div class="metric-item">
+                        <span class="metric-value" data-target="90">0</span>
+                        <span class="metric-label">Hours of Mentoring</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-value" data-target="10">0</span>
+                        <span class="metric-label">Hours of Mentoring</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-value" data-target="11">0</span>
+                        <span class="metric-label">Members on our team</span>
+                    </div>
+                </div>
 
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
+                 <div class="intro-metrics"></div>
+                    <div class="ulnone">
+                    <h2>Group Picture</h2>
+                    <img src="image000000.jpg" width="1000">
+                    <ul>
+                    FROM LEFT TO RIGHT: Top Row: Ekanthika, Lakshitha, Aditi, Mathangi, Aneesh, Pranav, Advait, Megan
+                    </ul>
+                    <ul>
+                     Bottom Row: Sashi, Adhvik, Annuncia 
+                    </ul>
+                </div>
+            </div>
+            <!-- Services Section -->
+            <div class="content-section" id="services">
+                <div class="section-header-small">
+                    <ul>
+                    <div class="small-logo">
+                        <img src="drawingv21-removebg-preview.png" height="40">
+                    </div>
+                </ul>
+                    <ul>
+                    <div class="small-brand">
+                    </div>
+                </ul>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
 
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-        }
+                <div class="section-header">
+                    <h2 class="section-title">Our Outreach</h2>
+                    <p class="section-subtitle">We help lots of younger teams</p>
+                </div>
 
-        setInterval(function () {
-            plusSlides(1);
-        }, 5000);
-    </script>
+                <div class="tabs-container">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" onclick="switchTab(this, 'development')">Outreach Events</button>
+                        <button class="tab-btn" onclick="switchTab(this, 'design')">FLL LeGoats</button>
+                        <button class="tab-btn" onclick="switchTab(this, 'consulting')">FLL Smart Owls</button>
+                        <button class="tab-btn" onclick="switchTab(this, 'support')">FLL Super Qualified Llamas</button>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="development">
+                            <div class="services-list">
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="Screenshot 2025-12-03 at 2.35.01 PM.png" alt="AI Development">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Issaquah Salmon Days</h4>
+                                        <p>We attended the Issaquah Salmon Days to get kids started on mainly FLL and FTC.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="Screenshot 2025-12-03 at 2.35.43 PM.png" alt="Web Applications">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Seattle SeaFair</h4>
+                                        <p>The Seattle SeaFair was also an outreach event we attended to get kids started on FIRST Robotics.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="Screenshot 2025-12-03 at 2.36.02 PM.png" alt="Mobile Apps">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>'The Claw'</h4>
+                                        <p>The claw was a popular contraption that we showed kids how to build.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="design">
+                            <div class="services-list">
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="Screenshot 2025-12-03 at 2.52.31 PM.png" alt="UX/UI Design">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>LeGoats</h4>
+                                        <p>LeGoats is an amateur FLL team who's rookie season was 2024-25. They are competing in this year's season and they are based in Bothell, WA.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="design">
+                            <div class="services-list">
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="Screenshot 2025-12-03 at 2.56.02 PM.png" alt="UX/UI Design">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>SQL</h4>
+                                        <p>SQL (Super Qualified Llamas) is a rookie team competing in this year's season based in Bothell, WA.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="consulting">
+                            <div class="services-list">
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="Screenshot 2025-12-03 at 2.45.52 PM.png" alt="Mentoring Smart Owls">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Smart Owls</h4>
+                                        <p>Smart Owls #70644 is a rookie FLL team who is competing in this year's UNEARTHED theme based in Bothell, WA.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Section -->
+            <div class="content-section" id="gallery">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <img src="drawingv21-removebg-preview.png" height="40">
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Gallery</h2>
+                    <p class="section-subtitle">Images of us at work</p>
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" onclick="filterGallery('all', this)">All</button>
+                    <button class="filter-btn" onclick="filterGallery('web', this)">Our team</button>
+                    <button class="filter-btn" onclick="filterGallery('mobile', this)">Outreach</button>
+                    <button class="filter-btn" onclick="filterGallery('branding', this)">Robot</button>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="web">
+                        <img src="image000000.jpg" alt="Team Photo 1">
+                        <div class="gallery-overlay">
+                            <p>Team Photo at First League Meet</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="web">
+                        <img src="Screenshot 2025-12-03 at 3.00.10 PM.png" alt="Team Photo 2">
+                        <div class="gallery-overlay">
+                            <p>Team Photo at Second League Meet</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="mobile">
+                        <img src="Screenshot 2025-12-03 at 2.35.01 PM.png" alt="Project 3">
+                        <div class="gallery-overlay">
+                            <p>Issaquah Salmon Days</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="mobile">
+                        <img src="Screenshot 2025-12-03 at 2.36.02 PM.png" alt="Project 4">
+                        <div class="gallery-overlay">
+                            <p>'The Claw'</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="branding">
+                        <img src="Screenshot 2025-12-03 at 3.05.52 PM.png" alt="Project 5">
+                        <div class="gallery-overlay">
+                            <p>Robot Picture 1</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="branding">
+                        <img src="Screenshot 2025-12-03 at 3.05.26 PM.png" alt="Project 6">
+                        <div class="gallery-overlay">
+                            <p>Robot Picture 2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials Section -->
+            <div class="content-section" id="testimonials">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <img src="drawingv21-removebg-preview.png" height="40">
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Tips</h2>
+                    <p class="section-subtitle">What we learned to share to other teams</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <h2>CAD</h2>
+                        <p class="testimonial-text">Make sure you know how to navigate your CAD software. Learning navigation is the first step.</p>
+                        <div class="testimonial-author">
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <h2>CODING</h2>
+                        <p class="testimonial-text">Remember to practice your skills, and check the docs <a href="https://ftc-docs.firstinspires.org/en/latest/programming_resources/onbot_java/OnBot-Java-Tutorial.html">here</a>.</p>
+                        <div class="testimonial-author">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <div class="content-section" id="about">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <img src="drawingv21-removebg-preview.png" height="40">
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="section-subtitle">Our story, mission, and values</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Robot Design</h3>
+                        <p>Our robot has an intake system, conveyor belt and flywheels.</p>
+                        <p><strong>INTAKE:</strong> Our intake uses extended rubber wheels from GoBilda.</p>
+                        <p><strong>CONVEYOR + RAMP:</strong> Our ramp uses a conveyor system to bring the balls up the ramp.</p>
+                        <p><strong>FLYWHEELS:</strong> Our flywheels are 6000 rpm GoBilda motors to launch the ball into the goal easily.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="Screenshot 2025-12-03 at 3.17.16 PM.png" alt="Our Team">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="content-section" id="contact">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <img src="drawingv21-removebg-preview.png" height="40">
+                    </div>  
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-subtitle">Contact info</p>
+                </div>
+                <div class="contact-form">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe081eWq8i1w5_w2BOQ_2rH3cT3m62pb_lnXxN17_GzxAvDbQ/viewform?embedded=true" width="640" height="895" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer" id="mainFooter">
+            <p>© 2025 PANGOLINS IN DISGUISE</a></p>
+        </footer>
+    </div>
+<script src="templatemo-nexa-scripts.js"></script>
 </body>
 </html>
