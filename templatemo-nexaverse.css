@@ -1838,12 +1838,10 @@ body {
 		list-style: none;
 	}
 	.contact-form {
-		display: block; /* Makes the iframe a block-level element */
-		margin-left: auto; /* Centers horizontally */
-		margin-right: auto; /* Centers horizontally */
-		width: 500px; /* Example width, adjust as needed */
-		height: 300px; /* Example height, adjust as needed */
-		border: none; /* Optional: remove default border */
+		display: flex;
+		justify-content: center; /* Centers children horizontally */
+		align-items: center;     /* Centers children vertically (if the container has a defined height) */
+		/* Remove text-align: center; as flexbox handles alignment now */
 	}
 }
 
