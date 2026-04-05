@@ -1,412 +1,225 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Awesome PID Site!</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="templatemo-nexaverse.css">
-<!-- 
-
-TemplateMo 603 Nexaverse
-
-https://templatemo.com/tm-603-nexaverse
-
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-</head>
-<body>
-    <!-- Loading Screen -->
-    <div class="loading-screen" id="loadingScreen">
-        <div class="loader-ring"></div>
-        <div class="loading-text">Initializing Experience...</div>
-    </div>
-
-    <!-- Ambient Background -->
-    <div class="ambient-bg">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
-    </div>
-
-    <!-- Grid Overlay -->
-    <div class="grid-overlay"></div>
-
-    <!-- Main Container -->
-    <div class="container">
-        <!-- Header -->
-        <div class="header" id="mainHeader">
-            <div class="logo">
-                <img src="drawingv21-removebg-preview.png" alt="PID Logo">
-            </div>
-            <h1 class="brand-name">PANGOLINS IN DISGUISE</h1>
-            <p class="tagline">Our Only Limit: Battery Life!</p>
-        </div>
+<html>
+	<head>
+		<title>PID - 30624</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
         
+        <style>
+            /* CUSTOM MODAL STYLES */
+            dialog {
+                border: none;
+                border-radius: 0.5rem;
+                padding: 2rem;
+                max-width: 90%;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+                text-align: center;
+            }
+            dialog::backdrop {
+                background: rgba(0, 0, 0, 0.8);
+            }
+            dialog img {
+                display: block;
+                margin: 0 auto 1.5rem auto;
+                max-height: 70vh;
+                border-radius: 4px;
+            }
+            .modal-close-btn {
+                background-color: #f56a6a !important; /* Editorial's accent color */
+                color: white !important;
+            }
+        </style>
+	</head>
+	<body class="is-preload">
 
-        <!-- Menu Grid -->
-        <div class="menu-grid" id="menuGrid">
-            <div class="menu-item initial-load" data-section="introduction">
-                <div class="menu-badge">MT</div>
-                <div class="menu-title">Meet Our Team</div>
-            </div>
-            <div class="menu-item initial-load" data-section="services">
-                <div class="menu-badge">OR</div>
-                <div class="menu-title">Outreach</div>
-            </div>
-            <div class="menu-item initial-load" data-section="gallery">
-                <div class="menu-badge">GL</div>
-                <div class="menu-title">Gallery</div>
-            </div>
-            <div class="menu-item initial-load" data-section="testimonials">
-                <div class="menu-badge">TP</div>
-                <div class="menu-title">Tips</div>
-            </div>
-            <div class="menu-item initial-load" data-section="about">
-                <div class="menu-badge">RD</div>
-                <div class="menu-title">Robot Design</div>
-            </div>
-            <div class="menu-item initial-load" data-section="contact">
-                <div class="menu-badge">CT</div>
-                <div class="menu-title">Contact</div>
-            </div>
-        </div>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-        <!-- Content Sections -->
-        <div id="contentArea">
-            <!-- MEET THE TEAM Section -->
-            <div class="content-section" id="introduction">
-                <div class="section-header-small">
-                    <div class="small-logo">
-                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="smallLogoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#00f0ff"/>
-                                    <stop offset="100%" style="stop-color:#ff00d4"/>
-                                </linearGradient>
-                            </defs>
-                            <polygon points="50,10 85,32 85,68 50,90 15,68 15,32" fill="none" stroke="url(#smallLogoGrad)" stroke-width="3"/>
-                            <circle cx="50" cy="50" r="10" fill="url(#smallLogoGrad)"/>
-                        </svg>
-                    </div>
-                    <div class="small-brand">
-                        <h3>PID</h3>
-                        <p>Our only limit... Battery life!</p>
-                    </div>
-                </div>
-                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
-                
-                <!-- Hero Banner -->
-                <div class="intro-hero">
-                    <div class="intro-hero-content">
-                        <span class="intro-badge">Est. 2025</span>
-                        <h1 class="intro-headline">Meet<br><span>Our</span> Team</h1>
-                        <p class="intro-subtext">We are Pangolins in Disguise, a creative FTC robotics team driven by innovation, engineering excellence, and community impact. Our diverse members combine skills in programming, design, outreach, and media to learn, solve real-world problems, and inspire others in STEM.</p>
-                        <div class="intro-cta-group">
-                            <button class="intro-cta-primary">Explore Our Work</button>
-                        </div>
-                    </div>
-                    <div class="intro-hero-visual">
-                        <div class="intro-floating-card card-1">
-                            <span class="card-icon">🧠</span>
-                            <span class="card-text">Smart</span>
-                        </div>
-                        <div class="intro-floating-card card-2">
-                            <span class="card-icon">✍️</span>
-                            <span class="card-text">Diligent</span>
-                        </div>
-                        <div class="intro-floating-card card-3">
-                            <span class="card-icon">💪</span>
-                            <span class="card-text">Hardworking</span>
-                        </div>
-                        <div class="intro-orb"></div>
-                    </div>
-                </div>
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
 
-                <!-- Metrics Strip -->
-                <div class="intro-metrics">
-                    <div class="metric-item">
-                        <span class="metric-value" data-target="90">0</span>
-                        <span class="metric-label">Hours of Mentoring</span>
-                    </div>
-                    <div class="metric-divider"></div>
-                    <div class="metric-item">
-                        <span class="metric-value" data-target="11">0</span>
-                        <span class="metric-label">Members on our team</span>
-                    </div>
-                </div>
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>PID</strong></a>
+									<ul class="icons">
+										<li><a href="https://x.com/PangolinsTeam65" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="https://www.youtube.com/@PangolinsInDisguise" class="icon brands fa-youtube"><span class="label">Facebook</span></a></li>
+										<li><a href="https://discord.gg/G6FqTtRu" class="icon brands fa-discord"><span class="label">Snapchat</span></a></li>
+										<li><a href="https://www.instagram.com/pangolins.in_disguise/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									</ul>
+								</header>
 
-                 <div class="intro-metrics"></div>
-                    <div class="ulnone">
-                    <h2>Group Picture</h2>
-                    <img src="Screenshot 2025-12-03 at 3.00.10 PM.png" width="1000">
-                    <ul>FROM LEFT TO RIGHT:</ul>
-                    <ul>Top Row: Premkumar, Advait</ul>
-                <ul>Middle Row: Ekanthika, Pranav, Aneesh, Aditi, Lakshita, Annuncia, Mageshwaran</ul>
-                <ul>Bottom Row: Megan, Adhvik, Sashi, Mathangi</ul>
-                </div>
-            </div>
-            <!-- Services Section -->
-            <div class="content-section" id="services">
-                <div class="section-header-small">
-                    <ul>
-                    <div class="small-logo">
-                        <img src="drawingv21-removebg-preview.png" height="40">
-                    </div>
-                </ul>
-                    <ul>
-                    <div class="small-brand">
-                    </div>
-                </ul>
-                </div>
-                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>We are <strong>Pangolins In Disguise!</strong></h1>
+											<p>FTC team 30624</p>
+										</header>
+										<p>A Passionate FTC team based in Bothell, WA. We are a positive and resilient team and we are extremely hardworking.</p>
+										<ul class="actions">
+											<li><a href="#" class="button big">Learn More</a></li>
+                                            <!-- NEW POPUP BUTTON -->
+											<li><button class="button big primary" id="openModal">View Full Photo</button></li>
+										</ul>
+									</div>
+									<span class="image object">
+										<img src="TeamPhoto.png" alt="Our Team Photo" />
+									</span>
+								</section>
 
-                <div class="section-header">
-                    <h2 class="section-title">Our Outreach</h2>
-                    <p class="section-subtitle">We help lots of younger teams</p>
-                </div>
+                            <!-- MODAL ELEMENT -->
+                            <dialog id="teamModal">
+                                <img src="TeamPhoto.png" alt="Full Team Photo">
+                                <button class="modal-close-btn" id="closeModal">Close Window</button>
+                            </dialog>
 
-                <div class="tabs-container">
-                    <div class="tab-buttons">
-                        <button class="tab-btn active" onclick="switchTab(this, 'development')">Outreach Events</button>
-                        <button class="tab-btn" onclick="switchTab(this, 'design')">FLL LeGoats</button>
-                        <button class="tab-btn" onclick="switchTab(this, 'consulting')">FLL Smart Owls</button>
-                        <button class="tab-btn" onclick="switchTab(this, 'support')">FLL Super Qualified Llamas</button>
-                    </div>
+							<!-- Section -->
+								<section id="features">
+									<header class="major">
+										<h2>Our Achivements</h2>
+									</header>
+									<div class="features">
+										<article>
+                                            <img src="award.png" class="SeaFairMentoring">
+											<div class="content">
+												<h3>Judge's choice award at Qualifiers</h3>
+												<p>We won the Judge's Choice Award at our Qualifiers for showing Pangolin Awareness!</p>
+											</div>
+										</article>
+										<article>
+											<img src="SeaFair.png" width="100" class="SeaFairMentoring">
+											<div class="content">
+												<h3>Outreach at Seafair</h3>
+												<p>At the Seattle Seafair, we showed kids & their parents about FLL.</p>
+											</div> 
+										</article>
+										<article>
+											<img src="smowlsfllmentor.png" class="SeaFairMentoring" width="150">
+											<div class="content">
+												<h3>Outreach amongst multiple FLL teams</h3>
+												<p>We helped FLL teams (LeGoats, Super Qualified Llamas and SmartOwls) with their code and Innovation Project.</p>
+											</div>
+										</article>
+										<article>
+											<img src="image.png" class="SeaFairMentoring">
+											<div class="content">
+												<h3>Tutoring for FTC every week</h3>
+												<p>We show kids interested in FTC how it works and how to code Java.</p>
+											</div>
+										</article>
+									</div>
+								</section>
 
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="development">
-                            <div class="services-list">
-                                <div class="service-row">
-                                    <div class="service-row-icon">
-                                        <img src="Screenshot 2025-12-03 at 2.35.01 PM.png" alt="AI Development">
-                                    </div>
-                                    <div class="service-row-content">
-                                        <h4>Issaquah Salmon Days</h4>
-                                        <p>We attended the Issaquah Salmon Days to get kids started on mainly FLL and FTC.</p>
-                                    </div>
-                                    <div class="service-row-arrow">→</div>
-                                </div>
-                                <div class="service-row">
-                                    <div class="service-row-icon">
-                                        <img src="Screenshot 2025-12-03 at 2.35.43 PM.png" alt="Web Applications">
-                                    </div>
-                                    <div class="service-row-content">
-                                        <h4>Seattle SeaFair</h4>
-                                        <p>The Seattle SeaFair was also an outreach event we attended to get kids started on FIRST Robotics.</p>
-                                    </div>
-                                    <div class="service-row-arrow">→</div>
-                                </div>
-                                <div class="service-row">
-                                    <div class="service-row-icon">
-                                        <img src="Screenshot 2025-12-03 at 2.36.02 PM.png" alt="Mobile Apps">
-                                    </div>
-                                    <div class="service-row-content">
-                                        <h4>'The Claw'</h4>
-                                        <p>The claw was a popular contraption that we showed kids how to build.</p>
-                                    </div>
-                                    <div class="service-row-arrow">→</div>
-                                </div>
-                            </div>
-                        </div>
+							<section id="moreinfo">
+									<header class="major">
+										<h2>More About Us</h2>
+									</header>
+									<div class="posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+											<h3>Pangolin Awareness</h3>
+											<p>We put a lot of work into our Pangolin Awareness, and we are commited to it.</p>
+											<ul class="actions">
+												<li><a href="https://www.worldanimalprotection.org/our-campaigns/sentience/animal-awareness-days/world-pangolin-day/#:~:text=World%20Pangolin%20Day%20is%20observed,status%2C%20and%20how%20to%20help." class="button">More</a></li>
+											</ul>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+											<h3>Grants/Donations</h3>
+											<p>We need sponsorships to help build our robot & community. So sponsor us today!</p>
+											<ul class="actions">
+												<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSen5Jp54c4Qj0GBpt3Swn7wjKLAX_jUMdk0q-WkeoEAq_0jMA/viewform?usp=preview" class="button">More</a></li>
+											</ul>
+										</article>
+                                        <dialog id="structureModal">
+    <img src="TeamStructure.png" alt="Team Structure Diagram">
+    <button class="modal-close-btn" id="closeStructure">Close Window</button>
+</dialog>
+									</div>
+                                    <div class="center-article">
+                                        <article>
+    <a href="javascript:void(0)" class="image" id="openStructure"></a>
+    <h3>Team Structure</h3>
+    <p>Our team is organized into specialized sub-teams to ensure maximum efficiency in building, coding, and outreach.</p>
+    <ul class="actions">
+        <li><button class="button" id="openStructureBtn">More</button></li>
+    </ul>
+</article>
+</div>
+								</section>
 
-                        <div class="tab-pane" id="design">
-                            <div class="services-list">
-                                <div class="service-row">
-                                    <div class="service-row-icon">
-                                        <img src="Screenshot 2025-12-03 at 2.52.31 PM.png" alt="UX/UI Design">
-                                    </div>
-                                    <div class="service-row-content">
-                                        <h4>LeGoats</h4>
-                                        <p>LeGoats is an amateur FLL team who's rookie season was 2024-25. They are competing in this year's season and they are based in Bothell, WA.</p>
-                                    </div>
-                                    <div class="service-row-arrow">→</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="design">
-                            <div class="services-list">
-                                <div class="service-row">
-                                    <div class="service-row-icon">
-                                        <img src="Screenshot 2025-12-03 at 2.56.02 PM.png" alt="UX/UI Design">
-                                    </div>
-                                    <div class="service-row-content">
-                                        <h4>SQL</h4>
-                                        <p>SQL (Super Qualified Llamas) is a rookie team competing in this year's season based in Bothell, WA.</p>
-                                    </div>
-                                    <div class="service-row-arrow">→</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="consulting">
-                            <div class="services-list">
-                                <div class="service-row">
-                                    <div class="service-row-icon">
-                                        <img src="Screenshot 2025-12-03 at 2.45.52 PM.png" alt="Mentoring Smart Owls">
-                                    </div>
-                                    <div class="service-row-content">
-                                        <h4>Smart Owls</h4>
-                                        <p>Smart Owls #70644 is a rookie FLL team who is competing in this year's UNEARTHED theme based in Bothell, WA.</p>
-                                    </div>
-                                    <div class="service-row-arrow">→</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+						</div>
+					</div>
 
-            <!-- Gallery Section -->
-            <div class="content-section" id="gallery">
-                <div class="section-header-small">
-                    <div class="small-logo">
-                        <img src="drawingv21-removebg-preview.png" height="40">
-                    </div>
-                </div>
-                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+				<div id="sidebar">
+						<div class="inner">
 
-                <div class="section-header">
-                    <h2 class="section-title">Gallery</h2>
-                    <p class="section-subtitle">Images of us at work</p>
-                </div>
+							<!-- Search -->
+								<!-- <section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section> -->
 
-                <div class="filter-buttons">
-                    <button class="filter-btn active" onclick="filterGallery('all', this)">All</button>
-                    <button class="filter-btn" onclick="filterGallery('web', this)">Our team</button>
-                    <button class="filter-btn" onclick="filterGallery('mobile', this)">Outreach</button>
-                    <button class="filter-btn" onclick="filterGallery('branding', this)">Robot</button>
-                </div>
-                <div class="gallery-grid">
-                    <div class="gallery-item" data-category="web">
-                        <img src="image000000.jpg" alt="Team Photo 1">
-                        <div class="gallery-overlay">
-                            <p>Team Photo at First League Meet</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-category="web">
-                        <img src="Screenshot 2025-12-03 at 3.00.10 PM.png" alt="Team Photo 2">
-                        <div class="gallery-overlay">
-                            <p>Team Photo at Second League Meet</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-category="mobile">
-                        <img src="Screenshot 2025-12-03 at 2.35.01 PM.png" alt="Project 3">
-                        <div class="gallery-overlay">
-                            <p>Issaquah Salmon Days</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-category="mobile">
-                        <img src="Screenshot 2025-12-03 at 2.36.02 PM.png" alt="Project 4">
-                        <div class="gallery-overlay">
-                            <p>'The Claw'</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-category="branding">
-                        <img src="Screenshot 2025-12-03 at 3.05.52 PM.png" alt="Project 5">
-                        <div class="gallery-overlay">
-                            <p>Robot Picture 1</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item" data-category="branding">
-                        <img src="Screenshot 2025-12-03 at 3.05.26 PM.png" alt="Project 6">
-                        <div class="gallery-overlay">
-                            <p>Robot Picture 2</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="#features">Achievements</a></li>
+										<li><a href="#moreinfo">More About Us</a></li>
+									</ul>
+								</nav>
 
-            <!-- Testimonials Section -->
-            <div class="content-section" id="testimonials">
-                <div class="section-header-small">
-                    <div class="small-logo">
-                        <img src="drawingv21-removebg-preview.png" height="40">
-                    </div>
-                </div>
-                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
 
-                <div class="section-header">
-                    <h2 class="section-title">Tips</h2>
-                    <p class="section-subtitle">What we learned to share to other teams</p>
-                </div>
+			</div>
 
-                <div class="testimonials-grid">
-                    <div class="testimonial-card">
-                        <h2>CAD</h2>
-                        <p class="testimonial-text">Make sure you know how to navigate your CAD software. Learning navigation is the first step.</p>
-                        <div class="testimonial-author">
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <h2>CODING</h2>
-                        <p class="testimonial-text">Remember to practice your skills, and check the docs <a href="https://ftc-docs.firstinspires.org/en/latest/programming_resources/onbot_java/OnBot-Java-Tutorial.html">here</a>.</p>
-                        <div class="testimonial-author">
-                        </div>
-                    </div>
-                </div>
-            </div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-            <!-- About Section -->
-            <div class="content-section" id="about">
-                <div class="section-header-small">
-                    <div class="small-logo">
-                        <img src="drawingv21-removebg-preview.png" height="40">
-                    </div>
-                </div>
-                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+            <!-- MODAL LOGIC JAVASCRIPT -->
+            <script>
+    // Elements for Team Photo Modal
+    const teamModal = document.getElementById('teamModal');
+    const openTeamBtn = document.getElementById('openModal');
+    const closeTeamBtn = document.getElementById('closeModal');
 
-                <div class="section-header">
-                    <h2 class="section-title">About Us</h2>
-                    <p class="section-subtitle">Our story, mission, and values</p>
-                </div>
+    // Elements for Team Structure Modal
+    const structModal = document.getElementById('structureModal');
+    const openStructBtn = document.getElementById('openStructureBtn');
+    const openStructImg = document.getElementById('openStructure'); // Clicking the image also opens it
+    const closeStructBtn = document.getElementById('closeStructure');
 
-                <div class="about-content">
-                    <div class="about-text">
-                        <h3>Robot Design</h3>
-                        <p>Our robot has an intake system, conveyor belt and flywheels.</p>
-                        <p><strong>INTAKE:</strong> Our intake uses extended rubber wheels from GoBilda.</p>
-                        <p><strong>CONVEYOR + RAMP:</strong> Our ramp uses a conveyor system to bring the balls up the ramp.</p>
-                        <p><strong>FLYWHEELS:</strong> Our flywheels are 6000 rpm GoBilda motors to launch the ball into the goal easily.</p>
-                    </div>
-                    <div class="about-image">
-                        <img src="Screenshot 2025-12-03 at 3.17.16 PM.png" alt="Our Team">
-                    </div>
-                </div>
-            </div>
+    // Open/Close Team Photo
+    openTeamBtn.onclick = () => teamModal.showModal();
+    closeTeamBtn.onclick = () => teamModal.close();
 
-            <!-- Contact Section -->
-            <div class="content-section" id="contact">
-                <div class="section-header-small">
-                    <div class="small-logo">
-                        <img src="drawingv21-removebg-preview.png" height="40">
-                    </div>  
-                </div>
-                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+    // Open/Close Team Structure (works on both the button and the thumbnail image)
+    openStructBtn.onclick = () => structModal.showModal();
+    openStructImg.onclick = () => structModal.showModal();
+    closeStructBtn.onclick = () => structModal.close();
 
-                <div class="section-header">
-                    <h2 class="section-title">Get in Touch</h2>
-                    <p class="section-subtitle">Contact info</p>
-                </div>
-                <div class="contact-form">
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe081eWq8i1w5_w2BOQ_2rH3cT3m62pb_lnXxN17_GzxAvDbQ/viewform?embedded=true" 
-                            width="640" 
-                            height="895" 
-                            frameborder="0" 
-                            marginheight="0" 
-                            marginwidth="0">
-                        Loading…
-                    </iframe>
-                </div>
-                </div>
-            </div>
-        </div>
+    // Close any modal if user clicks outside of it
+    window.onclick = (e) => {
+        if (e.target === teamModal) teamModal.close();
+        if (e.target === structModal) structModal.close();
+    };
+</script>
 
-        <!-- Footer -->
-        <footer class="footer" id="mainFooter">
-            <p>© 2025 PANGOLINS IN DISGUISE</a></p>
-        </footer>
-    </div>
-<script src="templatemo-nexa-scripts.js"></script>
-</body>
+
+	</body>
 </html>
